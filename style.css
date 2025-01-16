@@ -16,7 +16,7 @@ header {
 }
 
 #logo {
-    max-width: 150px; /* Default size for larger screens */
+    max-width: 200px; /* Default size for larger screens */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto; /* Center the logo */
     display: block; /* Make it a block element for centering */
