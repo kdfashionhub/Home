@@ -16,10 +16,23 @@ header {
 }
 
 #logo {
-    max-width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Maintain aspect ratio */
+    max-width: 150px; /* Default size for larger screens */
+    height: auto; /* Maintain aspect ratio */
     margin: 0 auto; /* Center the logo */
     display: block; /* Make it a block element for centering */
+}
+
+/* Media Queries for Responsive Logo */
+@media (max-width: 768px) { /* Tablet and smaller screens */
+    #logo {
+        max-width: 120px; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile screens */
+    #logo {
+        max-width: 100px; /* Adjust size for mobile */
+    }
 }
 
 nav ul {
