@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #6A0DAD; /* Purple background */
+    color: black; /* Black text */
+}
+
+header {
+    background-color: #4B0082; /* Dark Purple */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White text for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFD700; /* Gold/Yellow on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Light background for home section */
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+/* Shop Section */
+#shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    border: 1px solid #4B0082; /* Dark Purple */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    background: #FFFFFF; /* White background for products */
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* About and Contact Section */
+#about, #contact {
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4B0082; /* Dark Purple */
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold/Yellow */
+    color: black; /* Black text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #FFC300; /* Lighter Yellow on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4B0082; /* Dark Purple */
+    color: #FFFFFF; /* White text for contrast */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #shop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
