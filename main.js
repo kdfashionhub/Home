@@ -10,3 +10,14 @@ if (menuButton && menu) {
         menu.classList.toggle('hidden');
     });
 }
+
+
+   document.getElementById('menu-button').addEventListener('click', function() {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
+
+    function redirectToWhatsApp(productName, productPrice) {
+      const message = `I'm interested in the ${productName} for $${productPrice}`;
+      const url = `https://wa.me/919887481882?text=${encodeURIComponent(message)}`;
+      window.location.href = url;
+    }
