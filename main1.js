@@ -1,4 +1,4 @@
-// main.js
+// main1.js
 document.addEventListener('DOMContentLoaded', function() {
     const buyButtons = document.querySelectorAll('.buy-button');
 
