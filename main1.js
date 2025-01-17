@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const message = `I would like to buy the *${productName}* for ${productPrice}.\n\nCheck out the image: ${productImage}`;
-            const whatsappNumber = 'YOUR_WHATSAPP_NUMBER'; // Replace with your WhatsApp number
+            const whatsappNumber = '917302499398'; // Replace with your WhatsApp number
             const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
             window.open(whatsappLink, '_blank');
