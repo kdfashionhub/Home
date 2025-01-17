@@ -11,13 +11,9 @@ if (menuButton && menu) {
     });
 }
 
-
-   document.getElementById('menu-button').addEventListener('click', function() {
-      document.getElementById('menu').classList.toggle('hidden');
-    });
-
-    function redirectToWhatsApp(productName, productPrice) {
-      const message = `I'm interested in the ${productName} for $${productPrice}`;
-      const url = `https://wa.me/919887481882?text=${encodeURIComponent(message)}`;
-      window.location.href = url;
-    }
+// Function to redirect to WhatsApp with product details
+function redirectToWhatsApp(productName, productPrice) {
+    const message = `I'm interested in the ${productName} for $${productPrice.toFixed(2)}`;
+    const url = `https://wa.me/919887481882?text=${encodeURIComponent(message)}`;
+    window.location.href = url;
+}
